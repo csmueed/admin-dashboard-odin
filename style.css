@@ -1,0 +1,315 @@
+*, ::before , ::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: Roboto, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: #e2e8f0;
+}
+.sidebar {
+    background-color: #1992d4;
+    color: white;
+}
+/* .header, .navbar, .card, .announcements, .trending {
+    background-color: white;
+} */
+
+.sidebarIcons, .sideItemNew, .search-svg, .notification-svg, .searchbar, .profilePic-svg, .myHeaderName, .profilePicTwo-svg , .newBtn, .uploadBtn, .shareBtn{
+    display: inline-block;
+    /* border: 2px solid magenta; */
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 0.90fr 3fr 1fr;
+    /* grid-template-rows: 0.25fr 1fr 2fr 2fr; */
+    grid-template-rows: auto auto 1fr auto;
+}
+.sidebar {
+    /* border: 3px solid rgb(0, 255, 30); */
+    grid-column: 1/2;
+    grid-row: 1/5;
+    display: flex;
+    flex-direction: column;
+}
+.sideItem {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 1rem;
+}
+.searchbar {
+    width: 40rem;
+    height: 1.5rem;
+    border-radius: 2rem;
+    background-color: rgb(195, 195, 195);
+}
+.header {
+    /* border: 3px solid rgb(255, 123, 0); */
+    grid-column: 2/4;
+    grid-row: 1/2;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1rem;
+
+}
+.navbar {
+    grid-column: 2/4;
+    grid-row: 2/3;
+    /* border: 5px solid rgb(65, 0, 184); */
+    display: flex;
+    gap: 1rem;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem;
+}
+.navNamePic-Container{
+    display: flex;
+    /* flex-direction: column; */
+    align-items: flex-start;
+    justify-content: center;
+}
+.intro {
+    /* border: 3px solid red; */
+    height: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.myHeaderName{
+    font-size: 1.25rem;
+    font-weight: bolder;
+}
+.newBtn, .uploadBtn , .shareBtn {
+    width: 7rem;
+    height: 3rem;
+    background-color: #1992d4;
+    color: white;
+    border-radius: 3rem;
+    padding: 0.5rem;
+    border: transparent;
+    outline: transparent;
+}
+.button-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+.projects {
+    width: 100%;
+    grid-column: 2/3;
+    grid-row: 3/5;
+    padding: 1rem;
+    /* border: 3px solid blue; */
+}
+.project-container {
+    /* border: 5px solid gold; */
+    /* display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap; */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+
+}
+.projects-heading{
+    text-align: start;
+    padding: 1rem;
+    padding-bottom: 0.5rem;
+}
+.announcements {
+    grid-column: 3/4;
+    grid-row: 3/4;
+    /* border: 5px solid rgb(94, 0, 20); */
+    /* grid-template-rows: 0.25fr 10fr; */
+}
+.trending {
+    grid-column: 3/4;
+    grid-row: 4/5;
+    /* border: 5px solid hotpink; */
+}
+/* .projects-heading {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    text-align: start;
+    padding: 1rem;
+    margin: 0.5rem;
+} */
+
+.card {
+    /* border: 3px solid black; */
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    flex-wrap: wrap;
+    padding: 1rem;
+    margin: 1rem;
+    justify-content: center;
+    align-items: center;
+    box-shadow: -8px 0 0 rgb(255, 183, 0);
+}
+.card1 {
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+.card2 {
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+.card3 {
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+.card4 {
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+.card5 {
+    grid-column: 1/2;
+    grid-row: 3/4;
+}
+.card6 {
+    grid-column: 2/3;
+    grid-row: 3/4;
+}
+.annMainHeading{
+    text-align: center;
+    padding: 1rem;
+
+}
+/* .ann-text-container{
+    grid-row: 2/3;
+} */
+.ann-text-container{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 1rem;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    /* margin-top: -2rem; */
+    /* border: 3px solid red; */
+}
+
+.announcement1 {
+    grid-row: 1/2;
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+    /* margin-bottom: 1rem; */
+    padding-bottom: 1rem;
+}
+.announcement2 {
+    grid-row: 2/3;
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+    /* margin-bottom: 1rem; */
+    padding-bottom: 1rem;
+}
+
+.announcement3 {
+    grid-row: 3/4;
+    text-align: center;
+    /* border-bottom: 1px solid #ccc; */
+    /* margin-bottom: 1rem; */
+    /* padding-bottom: 1rem; */
+}
+
+.ann1Heading, .ann2Heading, .ann3Heading  {
+    font-size: 1.20rem;
+    font-weight: bold;
+    padding: 0.25rem;
+    margin-bottom: 0.25rem;
+}
+
+
+
+.trending-heading {
+    text-align: center;
+    /* margin-bottom: 1rem; */
+    padding: 1rem;
+    /* margin-top: -3rem; */
+    /* border: 3px solid magenta; */
+}
+.trending-container {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 1rem;
+    padding: 1rem;
+    /* border: 3px solid green; */
+}
+.trending1{
+    grid-row: 1/2;
+    text-align: center;
+}
+.trending2{
+    grid-row: 2/3;
+    text-align: center;
+
+}
+.trending3{
+    grid-row: 3/4;
+    text-align: center;
+
+}
+.trending4{
+    grid-row: 4/5;
+    text-align: center;
+
+}
+
+
+
+.header, .navbar, .card , .ann-text-container, .trending-container {
+    background-color: white;
+}
+.card , .ann-text-container, .trending-container {
+    border-radius: 1.5rem;
+}
+
+.card-container {
+    /* border: 3px solid red; */
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+    padding: 1rem;
+}
+.pro-head-new{
+    font-size: 1.40rem;
+    font-weight: bolder;
+    padding: 1rem;
+}
+
+.picOne, .picTwo, .picThree, .picFour {
+    display: block;
+}
+.trending-new {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.trending1-heading, .trending2-heading, .trending3-heading, .trending4-heading {
+    font-weight: bold;
+}
+
+.dashboardText {
+    font-size: 2rem;
+    font-weight: bolder;
+}
+.sideItemNew {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.announcements, .trending {
+    padding-right: 1rem;
+}
